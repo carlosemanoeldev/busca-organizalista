@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lista de Usuários</title>
+		<link rel="stylesheet" href="css/dashboard.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<h1 class="titulo">Lista de Usuários</h1>
+				<div class="filtros">
+					<select id="ordernarPor">
+						<option value="" disabled selected>
+							Ordenar por...
+						</option>
+						<option value="id">ID</option>
+						<option value="nome">Nome</option>
+						<option value="idade">Idade</option>
+					</select>
+					<input
+						type="text"
+						id="filtroBusca"
+						placeholder="Buscar..."
+					/>
+					<input
+						type="number"
+						id="filtroIdade"
+						placeholder="Idade mínima"
+					/>
+				</div>
+			</header>
+
+			<main class="main-content">
+				<div class="table-wrapper">
+					<table id="tabelaUsuarios">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Nome</th>
+								<th>Idade</th>
+								<th>Email</th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+
+				<div class="cards-wrapper"></div>
+			</main>
+
+			<footer class="footer">
+				<p>
+					Carlos Emanoel Delmondes Ferreira - Lista de Usuários © 2025
+				</p>
+			</footer>
+		</div>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>
